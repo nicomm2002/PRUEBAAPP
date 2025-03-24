@@ -1,18 +1,11 @@
-  
-function main1(t1)
-    disp(['Parameter t1: ', t1]);
-    % Aquí puedes poner el resto de tu código
-
-% Cargar el archivo de configuración
-config = loadjson('config.json.example');
-
+addpath(genpath(pwd))
 
 reslice_nii(config.t1, ...
             config.outname, ...
             config.outres, ...
-            true, true, 2);
+            true, true, 2)
         
-% Uso de reslice:
+% reslice usage:
 % reslice_nii(old_fn, ...
 %             new_fn, ...
 %             [voxel_size], ...
@@ -20,7 +13,3 @@ reslice_nii(config.t1, ...
 %             [bg], ...
 %             [method], [img_idx], [preferredForm]);
 
-
-
-end
- 
