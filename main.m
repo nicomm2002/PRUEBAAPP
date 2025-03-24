@@ -14,7 +14,7 @@ config = loadjson('config.json.example');
 % que cargará el archivo T1w, lo resampleará y escribirá el nuevo archivo 
 % resampleado a una resolución de 1 mm.
 %
-% Esto guardará en el directorio actual un archivo llamado "T1w_resliced1mm.nii"
+% Esto guardará en el directorio actual un archivo llamado "T1w_resliced1mm.nii.gz"
 % porque ese es el nombre del archivo almacenado en config.outname
 reslice_nii(config.t1, ...
             config.outname, ...
@@ -31,8 +31,8 @@ reslice_nii(config.t1, ...
 
  % PARTE 2
 % % Especificar la ruta al archivo .nii
- niiFilePath = 'C:/Users/ASUS/OneDrive/Escritorio/Matlab brainlife/EJEMPLO/data/t1.nii';
- niiFilePath1 = 'C:/Users/ASUS/OneDrive/Escritorio/Matlab brainlife/EJEMPLO/T1w_resliced1mm.nii';
+ niiFilePath = 'C:/Users/ASUS/OneDrive/Escritorio/Matlab brainlife/EJEMPLO/data/t1.nii.gz';
+ niiFilePath1 = 'C:/Users/ASUS/OneDrive/Escritorio/Matlab brainlife/EJEMPLO/T1w_resliced1mm.nii.gz';
  
 %% Leer el archivo .nii
  niiData = niftiread(niiFilePath);
