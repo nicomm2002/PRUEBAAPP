@@ -12,6 +12,4 @@ cd "C:\Users\ASUS\OneDrive\Escritorio\Matlab brainlife\EJEMPLO"
 t1=$(jq -r .t1 config.json)
 
 # run the actual MATLAB code
-matlab -nodesktop -r "try; main('$t1'); catch ME; disp(getReport(ME)); end; exit"
-
-
+./main.m $t1
