@@ -29,22 +29,5 @@ reslice_nii(config.t1, ...
 %             [bg], ...
 %             [method], [img_idx], [preferredForm]);
 
- % PARTE 2
-% % Especificar la ruta al archivo .nii
- niiFilePath = 'C:/Users/ASUS/OneDrive/Escritorio/Matlab brainlife/EJEMPLO/data/t1.nii.gz';
- niiFilePath1 = 'C:/Users/ASUS/OneDrive/Escritorio/Matlab brainlife/EJEMPLO/T1w_resliced1mm.nii.gz';
- 
-%% Leer el archivo .nii
- niiData = niftiread(niiFilePath);
- niiData1 = niftiread(niiFilePath1);
-% 
-% % Mostrar información sobre los datos cargados
- disp(size(niiData))
- % Visualizar el primer corte
- figure(1)
- imshow(niiData(:,:,1), []);
- figure(2)
- imshow(niiData1(:,:,1), []);
- pause;
-end
+
  
