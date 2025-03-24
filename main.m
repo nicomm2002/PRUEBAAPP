@@ -8,7 +8,7 @@ function main1(t1)
  addpath(genpath('C:\Users\ASUS\OneDrive\Escritorio\Matlab brainlife\NIfTI_20140122'));
 
 % Cargar el archivo de configuración
-config = loadjson('config.json.example');
+config = loadjson('config.json);
 
 % Pasar las entradas y salidas leídas del archivo config.json a la función 
 % que cargará el archivo T1w, lo resampleará y escribirá el nuevo archivo 
