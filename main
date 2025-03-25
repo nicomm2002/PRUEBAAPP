@@ -1,12 +1,13 @@
 #!/bin/bash
+module load matlab/2017a
 
-#SBATCH --job-name=template
-#SBATCH --ntasks-per-node=1
-#SBATCH --mem=1G
-#SBATCH --time=00:15:00
+mkdir -p compiled
 
-# parse config.json to load the input parameters needed for the app
-t1=$(jq -r .t1 config.json)
-
-# run the actual MATLAB code
-./main.m $t1
+cat > build.m <<END
+addpath(genpath('/N/u/brlife/git/vistasoft'))
+addpath(genpath('/N/u/brlife/git/jsonlab'))
+addpath(genpath('/N/soft/mason/SPM/spm8'))
+mcc -main-R -nodisplay -a /N/u/brlife/git/vistasoft/mrDiffusion/templates -d compiled myapp
+exit
+END
+matlab -nodisplay -nosplash -r build
