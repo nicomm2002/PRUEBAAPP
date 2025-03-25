@@ -1,12 +1,12 @@
 #!/bin/bash
-module load matlab/2017a
+#PBS -l nodes=1:ppn=16
+#PBS -l walltime=02:00:00
 
-mkdir -p compiled
+# Copyright (c) 2020 brainlife.io at University of Texas at Austin and Indiana University
+# 
+# This is the main file run by the brainlife.io orchestration system
+#
+# Author: Franco Pestilli
 
-cat > build.m <<END
-addpath(genpath('/N/u/brlife/git/vistasoft'))
-addpath(genpath('/N/u/brlife/git/jsonlab'))
-addpath(genpath('/N/soft/mason/SPM/spm8'))
-mcc -m -R -nodisplay -a /N/u/brlife/git/vistasoft/mrDiffusion/templates -d compiled myapp
-exit
-END
+# run the actual python code
+singularity exec -e docker://brainlife/mcr:r2019a ./compiled/main config.json
