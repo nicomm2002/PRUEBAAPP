@@ -1,10 +1,16 @@
 addpath(genpath(pwd))
-config = loadjson('config.json');
-reslice_nii(config.t1, ...
-            config.outname, ...
-            config.outres, ...
-            true, true, 2)
-        
+function [] = main(config.json)
+  % load our own config.json
+  config = loadjson(configJsonFilename);
+  
+  % Getting input network
+  outres = '';
+  if isfield(config,'outres')
+      outres = config.outres;
+end  
+
+
+  
 % reslice usage:
 % reslice_nii(old_fn, ...
 %             new_fn, ...
@@ -13,3 +19,6 @@ reslice_nii(config.t1, ...
 %             [bg], ...
 %             [method], [img_idx], [preferredForm]);
 
+  mkdir("output")
+
+  
