@@ -1,5 +1,5 @@
 % Leer archivo .json
-jsonData = jsondecode(fileread('config.json.example'));
+jsonData = jsondecode(fileread('config.json));
 
 % Obtener el valor de t1
 t1 = jsonData.t1;
