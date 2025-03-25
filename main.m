@@ -10,7 +10,7 @@ if ischar(t1)
 end
 
 % Calcular la suma
-suma = 1 + t1;
+suma = 1 + 1;
 
 % Mostrar la suma
 disp(['La suma de 1 + t1 es: ', num2str(suma)]);
