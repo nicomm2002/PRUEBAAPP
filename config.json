@@ -1,8 +1,6 @@
 {
-    "t1": "C:/Users/ASUS/OneDrive/Escritorio/Matlab brainlife/EJEMPLO/data/t1.nii",
+    "t1": "./t1.nii",
     "outres": [[1, 1, 1]],
     "outname": "T1w_resliced1mm.nii"
 }
-
-
 
