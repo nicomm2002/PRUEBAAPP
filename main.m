@@ -10,4 +10,4 @@ if ischar(t1)
 end
 
 % Mostrar la suma de 1 + t1
-disp(['La suma de 1 + t1 es: ', num2str(1 + t1)]);  
+disp(['La suma de 1 + t1 es: ', num2str(1 + 1)]);  
