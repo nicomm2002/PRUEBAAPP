@@ -1,6 +1,3 @@
-{
-    "t1": "./t1.nii",
-    "outres": [[1, 1, 1]],
-    "outname": "T1w_resliced1mm.nii"
+{ 
+    "t1": "2"
 }
-
