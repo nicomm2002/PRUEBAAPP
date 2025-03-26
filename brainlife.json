@@ -2,7 +2,7 @@
     "name": "PRUEBAAPP",
     "description": "Aplicación de prueba basada en MATLAB para Brainlife.io",
     "author": "Nicolas Martinez",
-    "license": "MIT",
+    "license": "CSIC",
     "version": "1.0.0",
     "inputs": [
         {
