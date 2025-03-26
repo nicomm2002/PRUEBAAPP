@@ -10,10 +10,9 @@
 
 
 mkdir -p out_dir
-# run the actual python code
-#singularity exec -e -bind `pwd`/ docker:brainlife/mcr:2020a main.m
-#singularity run -e docker://brainlife/brainstorm:220526 main.m 
-singularity run -e docker://brainlife/brainstorm:3_210303 main.m 
+# run the actual matlab code
+singularity run -e docker://brainlife/brainstorm:220526 main.m 
+
 
 
 
