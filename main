@@ -14,8 +14,7 @@
 
 mkdir -p out_dir
 # run the actual matlab code
-singularity run -e docker://brainlife/brainstorm:220526 main.m 
-
+singularity run -e brainlife/mcr:2020a main.m 
 
 
 
