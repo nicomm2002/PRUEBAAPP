@@ -9,6 +9,10 @@ if ischar(t1)
     t1 = str2double(t1);
 end
 
+suma= 1+t1;
 
 % Mostrar la suma
-disp(['La suma de 1 + t1 es: ', num2str(1+t1)]);
+disp(['La suma de 1 + t1 es: ', num2str(suma)]);
+
+% Guardar la variable suma en un archivo .mat
+save('resultado.mat', 'suma');
