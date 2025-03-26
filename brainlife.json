@@ -1,0 +1,25 @@
+{
+    "name": "PRUEBAAPP",
+    "description": "Aplicación de prueba basada en MATLAB para Brainlife.io",
+    "author": "Nicolas Martinez",
+    "license": "MIT",
+    "version": "1.0.0",
+    "inputs": [
+        {
+            "id": "input1",
+            "type": "file",
+            "description": "Archivo de entrada para la aplicación"
+        }
+    ],
+    "outputs": [
+        {
+            "id": "output1",
+            "type": "file",
+            "description": "Archivo de salida generado por la aplicación"
+        }
+    ],
+    "dependencies": {
+        "matlab": "R2021a"
+    },
+    "command": "matlab -batch \"run('script.m')\""
+}
