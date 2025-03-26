@@ -8,6 +8,8 @@
 #
 # Author: Franco Pestilli
 
+
+mkdir -p out_dir
 # run the actual python code
 singularity exec -e -bind `pwd`/ docker:brainlife/mcr:2020a main.m
 
