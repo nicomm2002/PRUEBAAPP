@@ -8,7 +8,7 @@
         {
             "id": "input1",
             "type": "file",
-            "description": "Archivo de entrada config.json.example"
+            "description": "Archivo de entrada config.json"
         }
     ],
     "outputs": [
