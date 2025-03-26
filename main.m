@@ -14,13 +14,7 @@ suma = 1 + t1;
 % Mostrar la suma
 disp(['La suma de 1 + t1 es: ', num2str(suma)]);
 
-% Guardar la variable suma en un archivo .json
-resultado.suma = suma;
-jsonText = jsonencode(resultado);
-fid = fopen('resultado.json', 'w');
-if fid == -1
-    error('No se puede crear el archivo resultado.json');
-end
-fwrite(fid, jsonText, 'char');
+
 fclose(fid);
-pause();
+save('out_dir/resultado.mat','suma')
+
