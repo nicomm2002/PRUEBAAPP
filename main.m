@@ -14,7 +14,5 @@ suma = 1 + t1;
 % Mostrar la suma
 disp(['La suma de 1 + t1 es: ', num2str(suma)]);
 
-
-fclose(fid);
 save('out_dir/resultado.mat','suma')
 
