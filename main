@@ -9,6 +9,7 @@
 # Author: Franco Pestilli
 
 # run the actual python code
-singularity exec -e docker:brainlife/mcr:2020a main.m
+singularity exec -e -bind `pwd`/ docker:brainlife/mcr:2020a main.m
+
 
 
