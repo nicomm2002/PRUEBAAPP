@@ -6,6 +6,12 @@
     "version": "1.0.0",
     "inputs": [
         {
+            "id": "config",
+            "type": "file",
+            "description": "Archivo de configuración brainlife.json",
+            "required": true
+        },
+        {
             "id": "input1",
             "type": "file",
             "description": "Archivo de entrada config.json"
