@@ -1,0 +1,29 @@
+{
+  "name": "Suma de t1",
+  "description": "Esta aplicación suma el valor de t1 obtenido de config.json y guarda el resultado en resultado.json",
+  "author": "nicomm2002",
+  "url": "https://github.com/nicomm2002/PRUEBAAPP",
+  "citation": "",
+  "license": "MIT",
+  "input": [
+    {
+      "id": "config",
+      "datatype": "json",
+      "description": "Archivo de configuración que contiene el valor de t1",
+      "required": true
+    }
+  ],
+  "output": [
+    {
+      "id": "resultado",
+      "datatype": "json",
+      "description": "Archivo JSON que contiene el resultado de la suma"
+    }
+  ],
+  "environment": {
+    "container": "docker",
+    "image": "brainlife/mcr:2020a",
+    "type": "singularity"
+  },
+  "command": "./main"
+}
