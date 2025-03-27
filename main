@@ -10,4 +10,6 @@
  # Author: Guiomar Niso
  mkdir -p out_dir
  # run the actual matlab code
- singularity run -e docker://brainlife/brainstorm:220526 main.m 
+singularity exec -e docker://brainlife/mcr:neurodebian1604-r2017a ./compiledmatlab/main
+
+
