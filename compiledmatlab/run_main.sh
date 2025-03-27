@@ -27,6 +27,6 @@ else
       args="${args} \"${token}\"" 
       shift
   done
-  eval "\"${exe_dir}/main\"" $args
+  eval "\"${exe_dir}/noddi_matlab\"" $args
 fi
 exit
