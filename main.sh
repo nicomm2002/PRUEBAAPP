@@ -1,14 +1,13 @@
 #!/bin/bash
-
-#SBATCH --job-name=template
-#SBATCH --ntasks-per-node=1
-#SBATCH --mem=1G
-#SBATCH --time=00:15:00
+ #PBS -l nodes=1:ppn=16
+ #PBS -l walltime=00:1:00
+ #PBS -l walltime=00:10:00
  
-# Cambiar al directorio de trabajo correcto
-cd "C:/Users/ASUS/OneDrive/Escritorio/Matlab brainlife/EJEMPLO"
-mkdir -p out_dir
-
-# run the actual MATLAB code
-matlab -nodesktop -r "try; run('main2.m'); catch ME; disp(getReport(ME)); end; exit"
-
+ # Copyright (c) 2020 brainlife.io at University of Texas at Austin and Indiana University
+ # 
+ # This is the main file run by the brainlife.io orchestration system
+ #
+ # Author: Guiomar Niso
+ mkdir -p out_dir
+ # run the actual matlab code
+ singularity run -e docker://brainlife/brainstorm:220526 main.m 
