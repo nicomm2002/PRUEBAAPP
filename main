@@ -12,4 +12,4 @@
 # Author: Franco Pestilli
 
 # run the actual python code
-singularity exec -e docker://brainlife/mcr:r2019a ./compiledmatlab/main config.json
+singularity exec -e docker://brainlife/mcr:r2019a ./compiledmatlab/main 
